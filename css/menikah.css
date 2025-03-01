@@ -40,7 +40,6 @@ html {
 
 .hero {
   background-image: url("../image/wedding1.png");
-  background-position: center center; 
   background-attachment: fixed;
   background-size: cover !important;
   color: white;
@@ -61,6 +60,10 @@ html {
 }
 
 @media only screen and (max-width: 320px) {
+  .hero {
+    background-position: center center; 
+  }
+
   .hero .title {
     font-size: 5rem;
   }
