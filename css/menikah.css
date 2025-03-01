@@ -60,6 +60,13 @@ html {
   color: whitesmoke;
 }
 
+@media only screen and (max-width: 320px) {
+  .hero .title {
+    font-size: 5rem;
+  }
+
+}
+
 .hero .sub {
   padding: 35px;
   color: whitesmoke;
