@@ -29,8 +29,8 @@
 
 
   <!-- <script src="https://kit.fontawesome.com/2828f7885a.js"
-    integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-    crossorigin="anonymous"></script> -->
+  integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+  crossorigin="anonymous"></script> -->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="js/jquery.coundown.js"></script>
   <link rel="icon" type="image/png" href="image/favicon.png" />
@@ -119,26 +119,30 @@
 
           <!-- Start Countdown -->
           <div class="subtitle">
-            <ul>
-              <li><span id="count-days"></span>
+            <ul id="hitungmundur">
+              <li><span id="count-days" class="days"></span>
                 <p class="days_text">Ngày</p>
               </li>
               <li class="separator">:</li>
-              <li><span id="count-hours"></span>
+              <li><span id="count-hours" class="hours"></span>
                 <p class="hours_text">Giờ</p>
               </li>
               <li class="separator">:</li>
-              <li><span id="count-minutes"></span>
+              <li><span id="count-minutes" class="minutes"></span>
                 <p class="minutes_text">Phút</p>
               </li>
               <li class="separator">:</li>
-              <li><span id="count-seconds"></span>
+              <li><span id="count-seconds" class="seconds"></span>
                 <p class="seconds_text">Giây</p>
               </li>
             </ul>
             <div class="spasi">
             </div>
-            <script type="text/javascript">
+          </div>
+          <script type="text/javascript">
+            var x = setInterval(function () {
+              var countDownDate = new Date("Mar 23, 2025 11:00:00").getTime();
+
               // Get today's date and time
               var now = new Date().getTime();
 
@@ -154,8 +158,8 @@
               document.getElementById('count-hours').innerHTML = hours;
               document.getElementById('count-minutes').innerHTML = minutes;
               document.getElementById('count-seconds').innerHTML = seconds;
-            </script>
-          </div>
+            }, 1000);    
+          </script>
           <!-- End Countdown -->
         </div>
       </div>
