@@ -57,13 +57,12 @@ html {
   transform: rotate(-2deg);
   font-size: 5rem;
   padding-bottom: 5px;
-  color: darkslategray;
 }
 
 
 .hero .subtitle {
   padding: 35px;
-  color: darkslategray;
+  color: darkslategray !important;
   font-size: 3rem;
 }
 
@@ -584,7 +583,7 @@ body.preloader-site {
 
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -593,7 +592,7 @@ body.preloader-site {
 
 
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -601,7 +600,7 @@ body.preloader-site {
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -609,7 +608,7 @@ body.preloader-site {
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -617,7 +616,7 @@ body.preloader-site {
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -626,7 +625,7 @@ body.preloader-site {
 
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

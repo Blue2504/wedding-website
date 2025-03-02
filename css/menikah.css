@@ -56,7 +56,6 @@ html {
   font-style: normal;
   transform: rotate(-2deg);
   font-size: 5rem;
-
   padding-bottom: 5px;
   color: lightyellow;
 }
@@ -591,51 +590,51 @@ body.preloader-site {
 
 
 .foto1 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   min-height: 24rem;
 }
 
 
 .foto2 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   min-height: 24rem;
 }
 
 .foto3 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   min-height: 24rem;
 }
 
 .foto4 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   min-height: 24rem;
 }
 
 .foto5 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   min-height: 24rem;
 }
 
 
 .foto6 {
-  background-image: linear-gradient(rgba(95, 2, 2, 0.5), rgba(48, 47, 47, 0.9)), url("../image/wedding1.png");
+  background-image: url("../image/wedding1.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   min-height: 24rem;
 }
