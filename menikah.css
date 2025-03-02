@@ -44,7 +44,6 @@ html {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
 }
@@ -53,18 +52,19 @@ html {
 
 .hero .title {
   font-family: "Bonheur Royale", serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   transform: rotate(-2deg);
   font-size: 5rem;
   padding-bottom: 5px;
-  color: whitesmoke;
+  color: darkslategray;
 }
 
-.hero .sub {
+
+.hero .subtitle {
   padding: 35px;
-  color: whitesmoke;
-  font-size: 1.3rem;
+  color: darkslategray;
+  font-size: 3rem;
 }
 
 .hero .tempatwaktu {
@@ -282,7 +282,7 @@ html {
 
 .main-content .section-color.pertanyaan .title,
 .main-content .section-color.pertanyaan .subtitle {
-  color: white;
+  color: darkslategray;
 }
 
 .main-content .section-color.pertanyaan i {
