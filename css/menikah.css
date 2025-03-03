@@ -387,6 +387,19 @@ html {
   color: whitesmoke;
 }
 
+.family {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.family-title {
+  font-size: 30px;
+}
+
+.family-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .fa-download {
   color: #43485c;
 }
@@ -661,9 +674,10 @@ body.preloader-site {
 }
 
 .section-light {
-  background-image: url(../image/divider-flowers-leaves.png);
+  background-image: url(../image/flower2.png);
   background-position: bottom -30px center;
   background-repeat: no-repeat;
+  background-size: 65% !important;
   background-size: initial;
 }
 
