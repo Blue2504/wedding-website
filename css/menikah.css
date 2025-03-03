@@ -400,6 +400,13 @@ html {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .family-name {
+    font-size: 0.5rem;
+    font-weight: bold;
+  }
+}
+
 .fa-download {
   color: #43485c;
 }
