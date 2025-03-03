@@ -60,12 +60,12 @@ html {
   color: lightyellow;
 }
 
-@media screen and (max-width: 620px) {
+/* @media screen and (max-width: 620px) {
   .hero {
     background-size: contain;
     background-repeat: no-repeat;
   }
-}
+} */
 
 .hero .sub {
   padding: 35px;
