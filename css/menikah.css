@@ -400,9 +400,9 @@ html {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .family-name {
-    font-size: 0.5rem;
+    font-size: 10px;
     font-weight: bold;
   }
 }
