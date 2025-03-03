@@ -401,6 +401,10 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  .family-title {
+    font-size: 20px;
+  }
+
   .family-name {
     font-size: 10px;
     font-weight: bold;
