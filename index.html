@@ -57,22 +57,6 @@
       <img src="image/favicon.png" alt="Flower" />
     </div>
   </div>
-  <!-- <iframe src="music1.wav" allow="autoplay"> -->
-  <audio controls autoplay loop id="background-music" preload="auto">
-    <source src="music1.wav">
-    Your browser does not support the audio element.
-  </audio>
-  <script>
-    window.onload = function () {
-      var audio = document.getElementById("background-music");
-      if (!audio.canPlayType) {
-        alert('Your browser does not support the audio element.');
-      } else {
-        audio.play();
-        console.log('running background');
-      }
-    };
-  </script>
   <!-- <embed name="GoodEnough" src="music1.mp3" loop="true" hidden="true" autostart="true"> -->
   <!-- End Preloader-->
   <!-- Begin Header -->
@@ -511,6 +495,26 @@
       easing: "ease-out",
       duration: 800,
     });
+  </script>
+  <!-- <iframe src="music1.wav" allow="autoplay"> -->
+  <button id="speaker-button" onclick='toggleSound()'>🔊</button>
+  <audio controls autoplay loop preload="auto" class="audio" id="audio" style="display: none;">
+    <source src="music1.wav">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    function toggleSound() {
+      const audio = document.getElementById('audio');
+      const button = document.getElementById('speaker-button');
+
+      if (audio.paused) {
+        audio.play();
+        button.textContent = '🔊';
+      } else {
+        audio.pause();
+        button.textContent = '🔇';
+      }
+    };
   </script>
 </body>
 

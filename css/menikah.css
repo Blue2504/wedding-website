@@ -37,6 +37,21 @@ html {
   font-color: #996E6D;
 }
 
+#speaker-button {
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: palevioletred;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: sticky;
+  bottom: 0;
+}
+
+#speaker-button:hover {
+  background-color: #0056b3;
+}
 
 .hero {
   background-image: url("../image/LOG05556.JPG");
