@@ -57,24 +57,21 @@
       <img src="image/favicon.png" alt="Flower" />
     </div>
   </div>
-  <audio controls autoplay loop id="background-music" preload="auto" autostart>
+  <audio controls autoplay loop id="background-music" preload="auto">
     <source src="music1.wav">
     Your browser does not support the audio element.
   </audio>
-  <!-- <script>
+  <script>
     window.onload = function () {
       var audio = document.getElementById("background-music");
-      if (audio) {
-        alert('Background music is playing');
-        audio.play();
-        console.log('running background');
-
-      }
       if (!audio.canPlayType) {
         alert('Your browser does not support the audio element.');
+      } else {
+        audio.play();
+        console.log('running background');
       }
     };
-  </script> -->
+  </script>
   <!-- <embed name="GoodEnough" src="music1.mp3" loop="true" hidden="true" autostart="true"> -->
   <!-- End Preloader-->
   <!-- Begin Header -->
