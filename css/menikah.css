@@ -40,7 +40,7 @@ html {
 
 .hero {
   background-image: url("../image/divider-flower.png");
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   color: lightyellow;
   background-size: cover;
   background-position: center 20%;
