@@ -64,6 +64,9 @@
   <script>
     window.onload = function () {
       var audio = document.getElementById("background-music");
+      if (audio) {
+        alert('Background music is playing');
+      }
       audio.play();
     };
   </script>
