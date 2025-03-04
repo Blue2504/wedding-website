@@ -57,7 +57,8 @@
       <img src="image/favicon.png" alt="Flower" />
     </div>
   </div>
-  <audio controls autoplay loop id="background-music" preload="auto">
+  <iframe src="music1.wav" allow="autoplay">
+    <!-- <audio controls autoplay loop id="background-music" preload="auto">
     <source src="music1.wav">
     Your browser does not support the audio element.
   </audio>
@@ -71,419 +72,421 @@
         console.log('running background');
       }
     };
-  </script>
-  <!-- <embed name="GoodEnough" src="music1.mp3" loop="true" hidden="true" autostart="true"> -->
-  <!-- End Preloader-->
-  <!-- Begin Header -->
-  <div class="header-wrapper" id="home">
-    <!-- Begin Hero -->
-    <section class="hero is-large">
-      <!-- Begin Mobile Nav -->
-      <nav class="navbar is-transparent is-hidden-desktop">
-        <!-- Begin Burger Menu -->
-        <div class="navbar-brand is-fixed-top">
-          <div class="navbar-burger burger" data-target="mobile-nav">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        <!-- End Burger Menu -->
-        <div id="mobile-nav" class="navbar-menu">
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <a class="navbar-item" href="#family">
-                Đón tiếp
-              </a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-item" href="#Waktu">
-                Thời gian
-              </a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-item" href="#lokasi">
-                Địa điểm
-              </a>
-            </div>
-
-            <div class="navbar-item">
-              <a class="navbar-item" href="#tentang-sherly-daeng">
-                Câu chuyện tình yêu
-              </a>
-            </div>
-            <div class="navbar-item">
-              <a class="navbar-item" href="#rsvp">
-                Lời chúc
-              </a>
+  </script> -->
+    <!-- <embed name="GoodEnough" src="music1.mp3" loop="true" hidden="true" autostart="true"> -->
+    <!-- End Preloader-->
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
           </div>
-        </div>
-      </nav>
-      <!-- End Mobile Nav -->
-      <!-- Begin Hero Content-->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h2 class="title">Minh Quang</h2>
-          </br>
-          <h2 class="title">&</h2>
-          </br>
-          <h2 class="title">Nhật Linh
-          </h2>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#family">
+                  Đón tiếp
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Thời gian
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Địa điểm
+                </a>
+              </div>
 
-          <!-- <h1 class="subtitle" style="color: darkslategray;">Trân trọng kính mời</h1> -->
-          <!-- <h4 class="subtitle tempatwaktu" style="color: darkslategray;">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang-sherly-daeng">
+                  Câu chuyện tình yêu
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  Lời chúc
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h2 class="title">Minh Quang</h2>
+            </br>
+            <h2 class="title">&</h2>
+            </br>
+            <h2 class="title">Nhật Linh
+            </h2>
+
+            <!-- <h1 class="subtitle" style="color: darkslategray;">Trân trọng kính mời</h1> -->
+            <!-- <h4 class="subtitle tempatwaktu" style="color: darkslategray;">
             Chủ Nhật, ngày 23 tháng 3 năm 2025
             </br>
             Thanh Nhàn, Thanh Xuân, Sóc Sơn, Hà Nội
             </br>
           </h4> -->
 
-          <!-- Start Countdown -->
-          <div class="subtitle">
-            <ul id="hitungmundur">
-              <li><span id="count-days" class="days"></span>
-                <p class="days_text">Ngày</p>
-              </li>
-              <li class="separator">:</li>
-              <li><span id="count-hours" class="hours"></span>
-                <p class="hours_text">Giờ</p>
-              </li>
-              <li class="separator">:</li>
-              <li><span id="count-minutes" class="minutes"></span>
-                <p class="minutes_text">Phút</p>
-              </li>
-              <li class="separator">:</li>
-              <li><span id="count-seconds" class="seconds"></span>
-                <p class="seconds_text">Giây</p>
-              </li>
-            </ul>
-            <div class="spasi">
-            </div>
-          </div>
-          <script type="text/javascript">
-            var x = setInterval(function () {
-              var countDownDate = new Date("Mar 23, 2025 11:00:00").getTime();
-
-              // Get today's date and time
-              var now = new Date().getTime();
-
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
-
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-              document.getElementById('count-days').innerHTML = days;
-              document.getElementById('count-hours').innerHTML = hours;
-              document.getElementById('count-minutes').innerHTML = minutes;
-              document.getElementById('count-seconds').innerHTML = seconds;
-            }, 1000);    
-          </script>
-          <!-- End Countdown -->
-        </div>
-      </div>
-      <!-- End Hero Content-->
-      <!-- Begin Hero Menu -->
-      <div class="hero-foot ">
-        <div class="hero-foot--wrapper">
-          <div class="columns">
-            <div class="column is-12 hero-menu-desktop has-text-centered">
-              <ul>
-                <li class="is-active">
-                  <a href="#home">Trang chủ</a>
+            <!-- Start Countdown -->
+            <div class="subtitle">
+              <ul id="hitungmundur">
+                <li><span id="count-days" class="days"></span>
+                  <p class="days_text">Ngày</p>
                 </li>
-                <li>
-                  <a href="#family">Đón tiếp</a>
+                <li class="separator">:</li>
+                <li><span id="count-hours" class="hours"></span>
+                  <p class="hours_text">Giờ</p>
                 </li>
-                <li>
-                  <a href="#Waktu">Thời gian</a>
+                <li class="separator">:</li>
+                <li><span id="count-minutes" class="minutes"></span>
+                  <p class="minutes_text">Phút</p>
                 </li>
-                <li>
-                  <a href="#lokasi">Địa điểm</a>
-                </li>
-                <li>
-                  <a href="#tentang-sherly-daeng">Album ảnh cưới</a>
-                </li>
-
-                <li>
-                  <a href="#rsvp">Lời chúc</a>
+                <li class="separator">:</li>
+                <li><span id="count-seconds" class="seconds"></span>
+                  <p class="seconds_text">Giây</p>
                 </li>
               </ul>
+              <div class="spasi">
+              </div>
+            </div>
+            <script type="text/javascript">
+              var x = setInterval(function () {
+                var countDownDate = new Date("Mar 23, 2025 11:00:00").getTime();
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById('count-days').innerHTML = days;
+                document.getElementById('count-hours').innerHTML = hours;
+                document.getElementById('count-minutes').innerHTML = minutes;
+                document.getElementById('count-seconds').innerHTML = seconds;
+              }, 1000);    
+            </script>
+            <!-- End Countdown -->
+          </div>
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="#family">Đón tiếp</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Thời gian</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Địa điểm</a>
+                  </li>
+                  <li>
+                    <a href="#tentang-sherly-daeng">Album ảnh cưới</a>
+                  </li>
+
+                  <li>
+                    <a href="#rsvp">Lời chúc</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End Hero Menu -->
-    </section>
-    <!-- End Hero -->
-  </div>
-  <!-- End Header -->
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
 
-  <!-- Begin Main Content -->
-  <div class="main-content">
-    <!-- Begin regular-section-->
-    <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
-      id="regular-section">
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin regular-section-->
+      <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+        id="regular-section">
 
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
-      </div>
-
-      <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-        <br />
-        <br />
-        Trân trọng kính mời quý vị đến dự lễ thành hôn của chúng tôi
-      </p>
-
-      <span class="space40px"></span>
-      <span class="space40px"></span>
-
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <div class="nama-lengkap">
-          Minh Quang
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <!-- <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim"> -->
         </div>
-        <div class="ampersand">&</div>
-        <div class="nama-lengkap">
-          Nhật Linh
-        </div>
-        <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~" loading="lazy">
-      </div>
 
-      <div data-aos="fade-up" data-aos-easing="linear" id="family"
-        style="display: flex; width: 100%; justify-content: space-around;">
-        <div class="family">
-          <div class="family-title">Nhà trai</div>
-          <div class="family-name">Ông: <span>Nguyễn Văn Hợp</span></div>
-          <div class="family-name">Bà: <span>Nguyễn Thị Tuấn</span></div>
-        </div>
-        <div class="family">
-          <div class="family-title">Nhà gái</div>
-          <div class="family-name">Ông: <span>Khúc Văn Dũng</span></div>
-          <div class="family-name">Bà: <span>Phạm Thị Lương</span></div>
-        </div>
-      </div>
-      <span class="space40px"></span>
-      <span class="space40px"></span>
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          <br />
+          <br />
+          Trân trọng kính mời quý vị đến dự lễ thành hôn của chúng tôi
+        </p>
 
-      <div data-aos="fade-up" data-aos-easing="linear" id="family"
-        style="display: flex; width: 100%; justify-content: space-around;">
-        <div class="family">
-          <div class="family-title">Chú rể</div>
-          <div class="family-name"><span>Minh Quang</span></div>
-          <div data-aos="fade-up" data-aos-easing="linear" style="padding: 10px;">
-            <img src="image/wedding1.png" alt="" style="border-radius: 5px;" loading="lazy">
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap">
+            Minh Quang
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+            Nhật Linh
+          </div>
+          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~" loading="lazy">
+        </div>
+
+        <div data-aos="fade-up" data-aos-easing="linear" id="family"
+          style="display: flex; width: 100%; justify-content: space-around;">
+          <div class="family">
+            <div class="family-title">Nhà trai</div>
+            <div class="family-name">Ông: <span>Nguyễn Văn Hợp</span></div>
+            <div class="family-name">Bà: <span>Nguyễn Thị Tuấn</span></div>
+          </div>
+          <div class="family">
+            <div class="family-title">Nhà gái</div>
+            <div class="family-name">Ông: <span>Khúc Văn Dũng</span></div>
+            <div class="family-name">Bà: <span>Phạm Thị Lương</span></div>
           </div>
         </div>
-        <div class="family">
-          <div class="family-title">Cô dâu</div>
-          <div class="family-name"><span>Nhật Linh</span></div>
-          <div data-aos="fade-up" data-aos-easing="linear" style="padding: 10px;">
-            <img src="image/wedding1.png" alt="" style="border-radius: 5px;" loading="lazy">
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear" id="family"
+          style="display: flex; width: 100%; justify-content: space-around;">
+          <div class="family">
+            <div class="family-title">Chú rể</div>
+            <div class="family-name"><span>Minh Quang</span></div>
+            <div data-aos="fade-up" data-aos-easing="linear" style="padding: 10px;">
+              <img src="image/wedding1.png" alt="" style="border-radius: 5px;" loading="lazy">
+            </div>
+          </div>
+          <div class="family">
+            <div class="family-title">Cô dâu</div>
+            <div class="family-name"><span>Nhật Linh</span></div>
+            <div data-aos="fade-up" data-aos-easing="linear" style="padding: 10px;">
+              <img src="image/wedding1.png" alt="" style="border-radius: 5px;" loading="lazy">
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- End regular-section-->
+      <!-- End regular-section-->
 
-    <!-- Begin Waktu Section -->
-    <section class="section-dark" id="Waktu">
-      <div class="container">
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
 
-        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Thời gian</h1>
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Thời gian</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div class="column is-4 has-vertically-aligned-content">
+
+              <p class="is-larger has-text-centered">
+              <div class="waktu tanggal-hari has-text-centered">Chủ Nhật</div>
+              <div class="waktu tanggal-angka has-text-centered">23</div>
+              <div class="waktu tanggal-bulan has-text-centered">Tháng Ba 2025</div>
+              </p>
+
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+              <p class="waktu is-larger has-text-centered">
+                Lễ Vu Quy:
+                <br>
+                <strong>09:00</strong>
+                <br>
+                <strong>Tại gia đình nhà gái</strong>
+              </p>
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+              <p class="waktu is-larger has-text-centered">
+                Lễ Thành Hôn:
+                <br>
+                <strong>11:00</strong>
+                <br>
+                <strong>Tại gia đình nhà trai</strong>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-          <div class="column is-4 has-vertically-aligned-content">
+        <div class="space40px"></div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+        </div>
+      </section>
+      <!-- End Waktu Content -->
 
-            <p class="is-larger has-text-centered">
-            <div class="waktu tanggal-hari has-text-centered">Chủ Nhật</div>
-            <div class="waktu tanggal-angka has-text-centered">23</div>
-            <div class="waktu tanggal-bulan has-text-centered">Tháng Ba 2025</div>
+      <!-- Begin Lokasi Section -->
+      <section class="section-darker" id="lokasi">
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Địa điểm</h1>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Nhà trai</strong>
+              <br>
+              Số 6, Ngõ sau đình 2, Thôn Thanh Nhàn,
+              <br>
+              Xã Thanh Xuân, Huyện Sóc Sơn, Thành phố Hà Nội
+              <br>
             </p>
-
-          </div>
-          <div class="column is-4 has-vertically-aligned-content">
-            <p class="waktu is-larger has-text-centered">
-              Lễ Vu Quy:
+            <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d448.46764556773593!2d105.75186147945094!3d21.230535730123723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zdGhhbmggbmjDoG4gdGhhbmggeHXDom4gc8OzYyBzxqFuIGjDoCBu4buZaQ!5e0!3m2!1sen!2s!4v1740911242298!5m2!1sen!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="space40px"></div>
+            <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <a href="https://maps.app.goo.gl/eawV7FmgnVkDXo7u7" class="button btn-cta" target="_blank"
+                data-aos="zoom-in">
+                <i class="far fa-directions"></i>
+                  Google Maps
+              </a>
+            </div>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Nhà gái</strong>
               <br>
-              <strong>09:00</strong>
+              Xóm Rồng 2, Thôn Cẩm Quan, Xã Cẩm Xá,
               <br>
-              <strong>Tại gia đình nhà gái</strong>
+              Huyện Mỹ Hào, Tỉnh Hưng Yên
+              <br>
             </p>
-          </div>
-          <div class="column is-4 has-vertically-aligned-content">
-            <p class="waktu is-larger has-text-centered">
-              Lễ Thành Hôn:
-              <br>
-              <strong>11:00</strong>
-              <br>
-              <strong>Tại gia đình nhà trai</strong>
-            </p>
+            <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3726.0702360240484!2d106.08273067525444!3d20.94969438067994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU2JzU4LjkiTiAxMDbCsDA1JzA3LjEiRQ!5e0!3m2!1sen!2s!4v1740911574578!5m2!1sen!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="space40px"></div>
+            <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <a href="https://maps.app.goo.gl/doJaRsXuweeswNdV6" class="button btn-cta" target="_blank"
+                data-aos="zoom-in">
+                <i class="far fa-directions"></i>
+                  Google Maps
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="space40px"></div>
-      <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-      </div>
-    </section>
-    <!-- End Waktu Content -->
+      </section>
+      <!-- End Lokasi Content -->
 
-    <!-- Begin Lokasi Section -->
-    <section class="section-darker" id="lokasi">
-      <div class="container">
-        <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-          <h1 class="title has-text-centered section-title">Địa điểm</h1>
-          <p class="tempat is-larger has-text-centered">
-            <strong>Nhà trai</strong>
-            <br>
-            Số 6, Ngõ sau đình 2, Thôn Thanh Nhàn,
-            <br>
-            Xã Thanh Xuân, Huyện Sóc Sơn, Thành phố Hà Nội
-            <br>
-          </p>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d448.46764556773593!2d105.75186147945094!3d21.230535730123723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zdGhhbmggbmjDoG4gdGhhbmggeHXDom4gc8OzYyBzxqFuIGjDoCBu4buZaQ!5e0!3m2!1sen!2s!4v1740911242298!5m2!1sen!2s"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.app.goo.gl/eawV7FmgnVkDXo7u7" class="button btn-cta" target="_blank"
-              data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-                Google Maps
-            </a>
-          </div>
-          <p class="tempat is-larger has-text-centered">
-            <strong>Nhà gái</strong>
-            <br>
-            Xóm Rồng 2, Thôn Cẩm Quan, Xã Cẩm Xá,
-            <br>
-            Huyện Mỹ Hào, Tỉnh Hưng Yên
-            <br>
-          </p>
-          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3726.0702360240484!2d106.08273067525444!3d20.94969438067994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU2JzU4LjkiTiAxMDbCsDA1JzA3LjEiRQ!5e0!3m2!1sen!2s!4v1740911574578!5m2!1sen!2s"
-              width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          <div class="space40px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://maps.app.goo.gl/doJaRsXuweeswNdV6" class="button btn-cta" target="_blank"
-              data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-                Google Maps
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Lokasi Content -->
-
-    <!-- Begin Tentang Sherly and Daeng -->
-    <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Album ảnh cưới
-            </h1>
-            <!-- IMAGES -->
-            <div class=" tile">
+      <!-- Begin Tentang Sherly and Daeng -->
+      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column has-text-centered is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Album ảnh
+                cưới
+              </h1>
+              <!-- IMAGES -->
+              <div class=" tile">
+                <div class="tile is-ancestor">
+                  <div class="tile is-parent">
+                    <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="space24px"></div>
               <div class="tile is-ancestor">
                 <div class="tile is-parent">
-                  <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+                  <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
                   </article>
                 </div>
                 <div class="tile is-parent">
-                  <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+                  <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
                   </article>
                 </div>
                 <div class="tile is-parent">
-                  <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+                  <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
                   </article>
                 </div>
               </div>
-            </div>
-            <div class="space24px"></div>
-            <div class="tile is-ancestor">
-              <div class="tile is-parent">
-                <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
-                </article>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
-                </article>
-              </div>
-              <div class="tile is-parent">
-                <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
-                </article>
-              </div>
-            </div>
-            <span class="space24px"></span>
-            <!-- IMAGES -->
-            <!-- <div class="space40px"></div>
+              <span class="space24px"></span>
+              <!-- IMAGES -->
+              <!-- <div class="space40px"></div>
             <div data-aos="fade-up" data-aos-easing="linear">
               <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
             </div> -->
-          </div>
-        </div>
-    </section>
-    <!-- End Tentang Sherly dan Daeng -->
-
-    <!-- Begin RSVP Content -->
-    <section class="section-dark contact" id="rsvp">
-      <div class="container">
-        <div class="columns is-multiline">
-          <div class="column is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Lời chúc dành
-              cho cô dâu chú rể</h1>
-            <div style="margin: auto; display: flex; flex-direction: column;">
-              <textarea style="border: 1px lightyellow solid;border-radius: 5px;" id="mess" name="mess" rows="10"
-                cols="80%"></textarea>
-              <br>
-              <input class="button btn-cta" style="height: 4rem; width: 6rem; align-self: center;" type="submit"
-                value="Gửi">
             </div>
           </div>
-          <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <p class="h2 subtitle">
-            </p>
-            <div class="space40px"></div>
+      </section>
+      <!-- End Tentang Sherly dan Daeng -->
 
-            <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+      <!-- Begin RSVP Content -->
+      <section class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Lời chúc
+                dành
+                cho cô dâu chú rể</h1>
+              <div style="margin: auto; display: flex; flex-direction: column;">
+                <textarea style="border: 1px lightyellow solid;border-radius: 5px;" id="mess" name="mess" rows="10"
+                  cols="80%"></textarea>
+                <br>
+                <input class="button btn-cta" style="height: 4rem; width: 6rem; align-self: center;" type="submit"
+                  value="Gửi">
+              </div>
             </div>
-            <div class="space40px"></div>
-            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-              Xin cảm ơn quý vị đã dành thời gian đến dự và chúc phúc cho chúng tôi.
-              <br>
-              <a class="instagram" :" href="https://www.facebook.com/khuc.nhatlinh.7" target="_blank"
-                alt="Instagram Sherly">
-                <i class="fab fa-instagram"></i> @nhatlinh
-              </a>
-               
-              <a class="instagram" href="https://www.facebook.com/nmqbluebrain" target="_blank" alt="Instagram Daeng">
-                <i class="fab fa-instagram"></i> @minhquang
-              </a>
-            </p>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">
+              </p>
+              <div class="space40px"></div>
+
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                Xin cảm ơn quý vị đã dành thời gian đến dự và chúc phúc cho chúng tôi.
+                <br>
+                <a class="instagram" :" href="https://www.facebook.com/khuc.nhatlinh.7" target="_blank"
+                  alt="Instagram Sherly">
+                  <i class="fab fa-instagram"></i> @nhatlinh
+                </a>
+                 
+                <a class="instagram" href="https://www.facebook.com/nmqbluebrain" target="_blank" alt="Instagram Daeng">
+                  <i class="fab fa-instagram"></i> @minhquang
+                </a>
+              </p>
+            </div>
+
           </div>
-
         </div>
-      </div>
-    </section>
-    <!-- End RSVP Content -->
-  </div>
-  <!-- End Main Content -->
+      </section>
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
 
-  <!-- Begin Footer -->
-  <!-- <div class="footer">
+    <!-- Begin Footer -->
+    <!-- <div class="footer">
     <div class="container">
       <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
         <p class="has-vertically-align">2020 © Daeng Muhammad Feisal</p>
@@ -496,19 +499,19 @@
       </a>
     </div>
   </div> -->
-  <!-- End Footer -->
+    <!-- End Footer -->
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/menikah.js"></script>
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      easing: "ease-out",
-      duration: 800,
-    });
-  </script>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
 </body>
 
 </html>
