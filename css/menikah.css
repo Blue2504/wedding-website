@@ -57,7 +57,7 @@ html {
   border-radius: 5px;
   background-color: transparent !important;
   color: palevioletred;
-  filter: brightness(0) saturate(50) invert(67%) sepia(26%) saturate(100%) hue-rotate(283deg) brightness(86%) contrast(90%);
+  filter: brightness(0) saturate(50) invert(67%) sepia(26%) saturate(300%) hue-rotate(283deg) brightness(86%) contrast(90%);
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: sticky;
