@@ -53,8 +53,16 @@ html {
 
 .play {
   font-size: 2rem;
-  color: #bf7877;
-  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent !important;
+  color: palevioletred;
+  filter: brightness(0) saturate(100%) invert(67%) sepia(26%) saturate(588%) hue-rotate(283deg) brightness(86%) contrast(90%);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: sticky;
+  padding: unset;
+  bottom: 0;
 }
 
 
