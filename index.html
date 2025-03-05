@@ -497,7 +497,7 @@
   </script>
   <!-- <iframe src="music1.wav" allow="autoplay"> -->
   <button id="speaker-button" onclick='toggleSound()' style="color: plum;">🎵</button>
-  <audio controls loop preload="auto" class="audio" id="audio" style="display: none;">
+  <audio controls loop preload="auto" class="audio" id="audio" style="display: none;" preload="auto">
     <source src="music1.wav">
     Your browser does not support the audio element.
   </audio>
@@ -508,7 +508,7 @@
 
       if (audio.paused) {
         audio.play();
-        button.textContent = '⏹';
+        button.textContent = '||';
       } else {
         audio.pause();
         button.textContent = '🎵';
