@@ -47,6 +47,7 @@ html {
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: sticky;
+  padding: unset;
   bottom: 0;
 }
 
