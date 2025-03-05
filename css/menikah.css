@@ -37,13 +37,27 @@ html {
   font-color: #996E6D;
 }
 
-#speaker-button {
+.pause {
   font-size: 3rem;
   border: none;
   border-radius: 5px;
   background-color: transparent !important;
   /* color: palevioletred; */
   filter: brightness(0) saturate(100%) invert(67%) sepia(26%) saturate(588%) hue-rotate(283deg) brightness(86%) contrast(90%);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: sticky;
+  padding: unset;
+  bottom: 0;
+}
+
+.play {
+  font-size: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent !important;
+  color: palevioletred;
+  filter: unset !important;
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: sticky;
