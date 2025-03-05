@@ -38,11 +38,12 @@ html {
 }
 
 #speaker-button {
-  font-size: 2rem;
+  font-size: 3rem;
   border: none;
   border-radius: 5px;
   background-color: transparent;
-  color: palevioletred;
+  /* color: palevioletred; */
+  filter: brightness(0) saturate(100%) invert(67%) sepia(26%) saturate(588%) hue-rotate(283deg) brightness(86%) contrast(90%);
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: sticky;
