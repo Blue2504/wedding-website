@@ -87,18 +87,30 @@ html {
 
 .hero .title {
   font-family: "Bonheur Royale", serif;
-  font-weight: 400;
+  font-weight: 550;
   font-style: normal;
   transform: rotate(-2deg);
   font-size: 5rem;
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; */
   color: lightyellow;
+}
+
+.title-container {
+  margin-top: 13.25rem;
 }
 
 @media screen and (max-width: 620px) {
   .hero {
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .title-container {
+    margin-top: 6.25rem;
+  }
+
+  .hero .title {
+    font-size: 3rem;
   }
 }
 
